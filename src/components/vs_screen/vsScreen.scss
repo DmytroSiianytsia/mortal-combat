@@ -1,0 +1,23 @@
+.player1,
+.player2 {
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 250px;  
+}
+
+.player1 {
+   left: 20px;
+}
+.player2 {
+  right: 20px;
+}
+
+.vs {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+  height: 100%;  
+}

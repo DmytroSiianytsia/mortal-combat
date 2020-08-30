@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { Switch, Route } from 'react-router-dom'
 import './App.css';
+import ChooseHero from './components/choose_hero/ChooseHero'
+import VsScreen from './components/vs_screen/VsScreen';
 
-function App() {
+const App = () => {
+  let [player1, setPlayer1] = useState(0)
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="choose_hero">
+        <div className="container">
+          <div className="field">
+            <Switch>
+              <Route path="/vs">
+                <VsScreen player1={player1}/>
+              </Route>
+              <Route path="/" exact>
+                <ChooseHero setPlayer1={setPlayer1}/>
+              </Route>
+            </Switch>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

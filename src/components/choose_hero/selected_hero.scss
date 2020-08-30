@@ -1,0 +1,13 @@
+.selected-hero {
+  position: absolute;
+  width: 150px;
+  // height: 390px;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+
+  &__img {
+    width: 100%;
+    // height: 100%;
+  }
+}

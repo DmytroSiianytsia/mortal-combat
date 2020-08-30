@@ -1,0 +1,22 @@
+.six-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__item {
+    width: 60px;
+    height: 60px;
+    color: red;
+    background: rgb(143, 134, 134);    
+    background-size: contain;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}
