@@ -35,28 +35,40 @@ export default function SixIcons() {
   useEffect(() => {
     document.addEventListener('keydown', changeIcon, false)
     return () => document.removeEventListener('keydown', changeIcon, false)
-  },[changeIcon])
-
+  }, [changeIcon])
+  
   return (
     <div className="six-icons">
-      <div className="six-icons__item">
-        <img src={require(`../../img/six_icons/${icons[q]}`)} alt="" className="six-icons__img" />
-      </div>
-      <div className="six-icons__item">
-        <img src={require(`../../img/six_icons/${icons[w]}`)} alt="" className="six-icons__img" />
-      </div>
-      <div className="six-icons__item">
-        <img src={require(`../../img/six_icons/${icons[e]}`)} alt="" className="six-icons__img" />
-      </div>
-      <div className="six-icons__item">
-        <img src={require(`../../img/six_icons/${icons[r]}`)} alt="" className="six-icons__img" />
-      </div>
-      <div className="six-icons__item">
-        <img src={require(`../../img/six_icons/${icons[t]}`)} alt="" className="six-icons__img" />
-      </div>
-      <div className="six-icons__item">
-        <img src={require(`../../img/six_icons/${icons[y]}`)} alt="" className="six-icons__img" />
-      </div>
+      {[q, w, e, r, t, y].map((item, index) => {
+        return (
+          <div className="six-icons__item" key={index}>
+            <img src={require(`../../img/six_icons/${icons[item]}`)} alt="" className="six-icons__img" />
+          </div>
+        )
+      })}
     </div>
   )
+
+  // return (
+  //   <div className="six-icons">
+      // <div className="six-icons__item">
+      //   <img src={require(`../../img/six_icons/${icons[q]}`)} alt="" className="six-icons__img" />
+      // </div>
+  //     <div className="six-icons__item">
+  //       <img src={require(`../../img/six_icons/${icons[w]}`)} alt="" className="six-icons__img" />
+  //     </div>
+  //     <div className="six-icons__item">
+  //       <img src={require(`../../img/six_icons/${icons[e]}`)} alt="" className="six-icons__img" />
+  //     </div>
+  //     <div className="six-icons__item">
+  //       <img src={require(`../../img/six_icons/${icons[r]}`)} alt="" className="six-icons__img" />
+  //     </div>
+  //     <div className="six-icons__item">
+  //       <img src={require(`../../img/six_icons/${icons[t]}`)} alt="" className="six-icons__img" />
+  //     </div>
+  //     <div className="six-icons__item">
+  //       <img src={require(`../../img/six_icons/${icons[y]}`)} alt="" className="six-icons__img" />
+  //     </div>
+  //   </div>
+  // )
 }
