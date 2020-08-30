@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mortal-combat/static/css/main.5f361e03.chunk.css",
+    "main.js": "/mortal-combat/static/js/main.28ff4d9b.chunk.js",
+    "main.js.map": "/mortal-combat/static/js/main.28ff4d9b.chunk.js.map",
+    "runtime-main.js": "/mortal-combat/static/js/runtime-main.aa5e457c.js",
+    "runtime-main.js.map": "/mortal-combat/static/js/runtime-main.aa5e457c.js.map",
+    "static/js/2.4b89da97.chunk.js": "/mortal-combat/static/js/2.4b89da97.chunk.js",
+    "static/js/2.4b89da97.chunk.js.map": "/mortal-combat/static/js/2.4b89da97.chunk.js.map",
+    "index.html": "/mortal-combat/index.html",
+    "precache-manifest.7c241a46a931bcffe523f1b1b6e717ab.js": "/mortal-combat/precache-manifest.7c241a46a931bcffe523f1b1b6e717ab.js",
+    "service-worker.js": "/mortal-combat/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/mortal-combat/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.4b89da97.chunk.js.LICENSE.txt": "/mortal-combat/static/js/2.4b89da97.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/mortal-combat/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aa5e457c.js",
+    "static/js/2.4b89da97.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.28ff4d9b.chunk.js"
+  ]
+}
