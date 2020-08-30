@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3cac09e1cdc3d5645a675456d8fba93d",
+    "revision": "0f2f130f31f17c68e053da7fb50d1ea9",
     "url": "/mortal-combat/index.html"
   },
   {
-    "revision": "c2266cc2089f88d6d148",
+    "revision": "7ca1df6aee161b7f9962",
     "url": "/mortal-combat/static/css/main.fece919e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mortal-combat/static/js/2.5b15f365.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c2266cc2089f88d6d148",
-    "url": "/mortal-combat/static/js/main.3d61c53a.chunk.js"
+    "revision": "7ca1df6aee161b7f9962",
+    "url": "/mortal-combat/static/js/main.331bd13a.chunk.js"
   },
   {
     "revision": "f6bbcf16c649eb585494",
