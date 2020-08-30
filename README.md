@@ -1,5 +1,5 @@
 Для локального запкска:
-`git clone https://github.com/DmytroSiianytsia/mortal-combat.git`
-`cd mortal-combat`
-`npm install`
-`npm run start`
+1. `git clone https://github.com/DmytroSiianytsia/mortal-combat.git`
+2. `cd mortal-combat`
+3. `npm install`
+4. `npm run start`
