@@ -22,7 +22,7 @@ export default function Choose_hero({ setPlayer1 }) {
     return () => {
       document.removeEventListener('keydown', goToVsScreen)
     }
-  }, [redirectToVsScreen, setRedirectToVsScreen, setPlayer1])
+  }, [redirectToVsScreen, setRedirectToVsScreen, setPlayer1, focus])
 
   return (
     <>

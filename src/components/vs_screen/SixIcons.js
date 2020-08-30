@@ -14,27 +14,26 @@ export default function SixIcons() {
   let [t, setT] = useState(0)
   let [y, setY] = useState(0)
 
-  const changeIcon = useCallback(event => {
-    console.log('changeIcon');
+  const changeIcon = useCallback(event => {    
       switch (event.key) {
-        case 'q': q < 3 ? setQ(q + 1) : setQ(0)
+        case 'q': q < 4 ? setQ(q + 1) : setQ(0)
           break
-        case 'w': w < 3 ? setW(w + 1) : setW(0)
+        case 'w': w < 4 ? setW(w + 1) : setW(0)
           break
-        case 'e': e < 3 ? setE(e + 1) : setE(0)
+        case 'e': e < 4 ? setE(e + 1) : setE(0)
           break
-        case 'r': r < 3 ? setR(r + 1) : setR(0)
+        case 'r': r < 4 ? setR(r + 1) : setR(0)
           break
-        case 't': t < 3 ? setT(t + 1) : setT(0)
+        case 't': t < 4 ? setT(t + 1) : setT(0)
           break
-        case 'y': y < 3 ? setY(y + 1) : setY(0)
+        case 'y': y < 4 ? setY(y + 1) : setY(0)
           break
         default: return
       }    
     },[q,w,e,r,t,y])
   
   useEffect(() => {
-    document.addEventListener('keydown', e => changeIcon(e), false)
+    document.addEventListener('keydown', changeIcon, false)
     return () => document.removeEventListener('keydown', changeIcon, false)
   },[changeIcon])
 

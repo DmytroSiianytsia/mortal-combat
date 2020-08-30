@@ -4,7 +4,7 @@ function useRoveFocus() {
   const [currentFocus, setCurrentFocus] = useState(0);   
 
   const handleKeyDown = useCallback(
-    e => {      
+    e => {       
       switch (e.key) {
         case 'ArrowUp':
           if (currentFocus < 5) {
